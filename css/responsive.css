@@ -1,0 +1,148 @@
+/* Responsive Styles */
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+    :root {
+        --max-width: 960px;
+    }
+    
+    .catchphrase {
+        font-size: 2.5rem;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    :root {
+        --max-width: 720px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+    
+    .hero-content, .hero-image {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    .hero-image {
+        margin-top: 40px;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .catchphrase {
+        font-size: 2.25rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .features-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+    :root {
+        --max-width: 540px;
+        --header-height: 60px;
+    }
+    
+    .header-content {
+        height: var(--header-height);
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .catchphrase {
+        font-size: 2rem;
+    }
+    
+    .subheading {
+        font-size: 1.1rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .hero {
+        padding: 100px 0 50px;
+    }
+    
+    .catchphrase {
+        font-size: 1.75rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .button.large {
+        width: 100%;
+    }
+    
+    .download-card {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .feature-item, .feature-card {
+        padding: 20px;
+    }
+}
+
+/* Mobile menu button for future implementation */
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .cta-button-container {
+        margin-left: auto;
+    }
+}

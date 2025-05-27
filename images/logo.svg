@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: 'Arial', sans-serif; font-weight: 700; }
+    .block { fill: #0066CC; }
+    .md { fill: #333333; }
+  </style>
+  <text x="10" y="35" class="text block" font-size="32">Block</text>
+  <text x="100" y="35" class="text md" font-size="32">.md</text>
+</svg>
