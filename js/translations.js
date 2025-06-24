@@ -41,20 +41,20 @@ export const translations = {
   // ヒーローセクション
   "hero": {
     "title": {
-      "en": "Organize Your Knowledge with Block.md",
-      "ja": "Block.mdで知識を整理する"
+      "en": "Write like Notion.<br>Save as Markdown.",
+      "ja": "Write like Notion.<br>Save as Markdown."
     },
     "subtitle": {
-      "en": "A local-first, AI-friendly block-based markdown editor",
-      "ja": "ローカル管理でAIフレンドリーなブロックベースのマークダウンエディタ"
+      "en": "A new editor experience that combines block editing and local Markdown for engineers and knowledge workers",
+      "ja": "エンジニアと知的作業者のための、ブロック編集とローカルMarkdownを融合した新しいエディタ体験"
     },
     "cta_primary": {
-      "en": "Download on App Store",
-      "ja": "App Storeでダウンロード"
+      "en": "Download for macOS",
+      "ja": "macOS版をダウンロード"
     },
     "cta_secondary": {
-      "en": "Learn More",
-      "ja": "詳細を見る"
+      "en": "See Features",
+      "ja": "機能を見る"
     }
   },
   
