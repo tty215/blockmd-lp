@@ -3,257 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block.md - Write like Notion. Save as Markdown.</title>
-    <meta name="description" content="Block.md は、Notionのような直感的なブロック編集体験と、ObsidianのようなローカルMarkdown管理の自由さを融合したWYSIWYG Markdownエディタです。">
+    <title data-i18n="page.title">Block.md - Notionライクなマークダウンエディタ</title>
+    <meta name="description" data-i18n="page.description" content="ローカル管理でAIフレンドリーなブロックベースのマークダウンエディタ">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
                     <img src="images/logo.svg" alt="Block.md Logo">
+                    <h1 data-i18n="header.title">Block.md</h1>
                 </div>
-                <nav class="nav">
+                <nav>
                     <ul>
-                        <li><a href="#features">機能</a></li>
-                        <li><a href="#why">特徴</a></li>
-                        <li><a href="#download">ダウンロード</a></li>
+                        <li><a href="#features" data-i18n="nav.features">特徴</a></li>
+                        <li><a href="#screenshots" data-i18n="nav.screenshots">スクリーンショット</a></li>
+                        <li><a href="#platforms" data-i18n="nav.platforms">プラットフォーム</a></li>
                     </ul>
                 </nav>
-                <div class="cta-button-container">
-                    <a href="#download" class="button primary">無料ダウンロード</a>
+                <div class="language-switcher">
+                    <button class="lang-btn" data-lang="ja">日本語</button>
+                    <button class="lang-btn" data-lang="en">English</button>
                 </div>
+                <button class="mobile-menu-toggle">☰</button>
             </div>
         </div>
     </header>
 
     <section class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="catchphrase">Write like Notion.<br>Save as Markdown.</h1>
-                <p class="subheading">エンジニアと知的作業者のための、ブロック編集とローカルMarkdownを融合した新しいエディタ体験</p>
-                <div class="cta-buttons">
-                    <a href="#download" class="button primary large">macOS版をダウンロード</a>
-                    <a href="#features" class="button secondary">機能を見る</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="glass-card">
-                    <img src="images/editor-ui.svg" alt="Block.md Editor Interface" class="editor-preview">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="what" class="what-is">
-        <div class="container">
-            <h2 class="section-title">Block.md とは</h2>
-            <div class="description">
-                <p>Block.md は、Notionのような直感的なブロック編集体験と、ObsidianのようなローカルMarkdown管理の自由さを融合した、エンジニア・知的作業者向けのWYSIWYG Markdownエディタです。</p>
-                <ul class="feature-list">
-                    <li>書いた内容はすべて .md 形式でローカル保存</li>
-                    <li>ブロック単位での編集・移動・変換が可能</li>
-                    <li>タグによる整理、ファイル横断検索も可能</li>
-                    <li>AIエージェントと相性の良い構造化データ</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="why" class="why-blockmd">
-        <div class="container">
-            <h2 class="section-title">なぜ Block.md なのか</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="images/icon-markdown.svg" alt="Markdown Icon">
-                    </div>
-                    <h3 class="feature-title">ローカルに安全に保存</h3>
-                    <p class="feature-description">クラウドロックインなし、Gitでバージョン管理も簡単。あなたのデータは常にあなたのものです。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="images/icon-block.svg" alt="Block Editing Icon">
-                    </div>
-                    <h3 class="feature-title">Notionのように書けて、Markdownで残る</h3>
-                    <p class="feature-description">直感的な操作感と、プレーンなデータ構造を両立。将来どのツールでも使えるデータ形式。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="images/icon-ai.svg" alt="AI Icon">
-                    </div>
-                    <h3 class="feature-title">AI活用前提の「構造化された思考」</h3>
-                    <p class="feature-description">タグ、ブロック、メタ情報付きのノートをAIにそのまま渡せる。データの文脈を維持したまま活用可能。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="images/icon-ui.svg" alt="UI Icon">
-                    </div>
-                    <h3 class="feature-title">クロスプラットフォーム</h3>
-                    <p class="feature-description">macOS / iOS / Android対応予定。どこでも同じ操作感で快適に使えます。</p>
-                </div>
+            <h2 data-i18n="hero.title">Block.mdで知識を整理する</h2>
+            <p data-i18n="hero.subtitle">ローカル管理でAIフレンドリーなブロックベースのマークダウンエディタ</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span data-i18n="hero.cta_primary">App Storeでダウンロード</span>
+                </a>
+                <a href="#features" class="btn btn-outline">
+                    <span data-i18n="hero.cta_secondary">詳細を見る</span>
+                </a>
             </div>
         </div>
     </section>
 
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">主要機能</h2>
-            <div class="features-list">
-                <div class="feature-item">
-                    <h3>ブロック単位のWYSIWYGエディタ</h3>
-                    <p>テキスト、リスト、コード、表など、様々な形式のブロックを自由に操作。ドラッグ＆ドロップで移動、変換も簡単です。</p>
+            <div class="section-title">
+                <h2 data-i18n="features.title">主な特徴</h2>
+                <p data-i18n="features.subtitle">現代の知識管理のために設計</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <img src="images/icons/block.svg" alt="Block-based Editor" class="feature-icon">
+                    <h3 data-i18n="features.block_based.title">ブロックベースのマークダウンエディタ</h3>
+                    <p data-i18n="features.block_based.description">純粋なマークダウンファイルを維持しながら、Notionのようなブロックベースのインターフェースでコンテンツを編集</p>
                 </div>
-                <div class="feature-item">
-                    <h3>タグ補完・タグ検索・タグ絞り込み</h3>
-                    <p>ドキュメントに効率的にタグを付け、整理・検索できます。関連ドキュメントをタグで一覧表示することも可能です。</p>
+                <div class="feature-card animate-on-scroll">
+                    <img src="images/icons/local.svg" alt="Local-first Management" class="feature-icon">
+                    <h3 data-i18n="features.local_first.title">ローカル管理優先</h3>
+                    <p data-i18n="features.local_first.description">データはデバイスに保存。ローカルファイルとフォルダで作業し、コンテンツを完全に管理</p>
                 </div>
-                <div class="feature-item">
-                    <h3>Markdown FrontMatter対応</h3>
-                    <p>title・tagsなどのメタデータをFrontMatter形式で管理。他のMarkdownツールとの互換性も保ちます。</p>
+                <div class="feature-card animate-on-scroll">
+                    <img src="images/icons/ai.svg" alt="AI Editor Integration" class="feature-icon">
+                    <h3 data-i18n="features.ai_friendly.title">AIエディタ連携</h3>
+                    <p data-i18n="features.ai_friendly.description">Cursor、Claude Code、Windsurf、Clineなどの各種AIエディタのルールを適用可能</p>
                 </div>
-                <div class="feature-item">
-                    <h3>ファイルごとのタブ表示（VSCode風UI）</h3>
-                    <p>複数のファイルを同時に開いて効率的に作業。開発者になじみやすいインターフェースです。</p>
+                <div class="feature-card animate-on-scroll">
+                    <img src="images/icons/directory.svg" alt="Flexible Directory Structure" class="feature-icon">
+                    <h3 data-i18n="features.directory_structure.title">柔軟なディレクトリ構造</h3>
+                    <p data-i18n="features.directory_structure.description">知識管理に適したディレクトリ構造を選択可能</p>
                 </div>
-                <div class="feature-item">
-                    <h3>スラッシュコマンドでブロック切り替え</h3>
-                    <p>「/」キーを入力するだけで様々なブロックに素早く変換。マウス操作を減らして生産性アップ。</p>
-                </div>
-                <div class="feature-item">
-                    <h3>グラスモーフィズムを活かした洗練されたUI</h3>
-                    <p>長時間の作業でも目に優しい、モダンでミニマルなデザイン。ライト/ダークモード両対応。</p>
+                <div class="feature-card animate-on-scroll">
+                    <img src="images/icons/tag.svg" alt="Tag-based Management" class="feature-icon">
+                    <h3 data-i18n="features.tag_based.title">タグベース管理</h3>
+                    <p data-i18n="features.tag_based.description">タグでデータを管理し、カンバン表示やテーブル表示に対応</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="comparison" class="comparison">
+    <section id="screenshots" class="screenshots">
         <div class="container">
-            <h2 class="section-title">競合製品との比較</h2>
-            <div class="comparison-table-container">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>機能</th>
-                            <th>Block.md</th>
-                            <th>Notion</th>
-                            <th>Obsidian</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>ローカルファイル保存</td>
-                            <td class="check">✓</td>
-                            <td class="minus">×</td>
-                            <td class="check">✓</td>
-                        </tr>
-                        <tr>
-                            <td>ブロック編集</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="minus">限定的</td>
-                        </tr>
-                        <tr>
-                            <td>Markdownネイティブ</td>
-                            <td class="check">✓</td>
-                            <td class="minus">×</td>
-                            <td class="check">✓</td>
-                        </tr>
-                        <tr>
-                            <td>WYSIWYG編集</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="minus">限定的</td>
-                        </tr>
-                        <tr>
-                            <td>オフライン使用</td>
-                            <td class="check">✓</td>
-                            <td class="minus">限定的</td>
-                            <td class="check">✓</td>
-                        </tr>
-                        <tr>
-                            <td>データ所有権</td>
-                            <td class="check">✓</td>
-                            <td class="minus">×</td>
-                            <td class="check">✓</td>
-                        </tr>
-                        <tr>
-                            <td>AIとの相性</td>
-                            <td class="check">✓</td>
-                            <td class="check">✓</td>
-                            <td class="minus">限定的</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="section-title">
+                <h2 data-i18n="screenshots.title">Block.mdの実際の画面</h2>
+                <p data-i18n="screenshots.subtitle">シンプルなインターフェースで強力な機能を提供</p>
             </div>
-        </div>
-    </section>
-
-    <section id="download" class="download">
-        <div class="container">
-            <div class="glass-card download-card">
-                <h2 class="section-title">Block.md を今すぐ試す</h2>
-                <p>完全無料で使えるベータ版を今すぐダウンロードして、新しいノート体験を始めましょう。</p>
-                <div class="download-options">
-                    <a href="#" class="button primary large">macOS版ダウンロード</a>
-                    <p class="coming-soon">iOS / Android版は近日公開予定</p>
+            <div class="screenshots-container">
+                <div class="screenshot-item animate-on-scroll">
+                    <div class="screenshot-image">
+                        <img src="images/screenshots/editor.svg" alt="Block Editor Screenshot">
+                    </div>
+                    <div class="screenshot-content">
+                        <h3 data-i18n="screenshots.editor.title">直感的なブロックエディタ</h3>
+                        <p data-i18n="screenshots.editor.description">Notionを使ったことがある方には馴染みやすい、モダンなブロックベースのエディタで思考を整理</p>
+                    </div>
+                </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <div class="screenshot-image">
+                        <img src="images/screenshots/kanban.svg" alt="Kanban View Screenshot">
+                    </div>
+                    <div class="screenshot-content">
+                        <h3 data-i18n="screenshots.kanban.title">タスク管理のカンバンビュー</h3>
+                        <p data-i18n="screenshots.kanban.description">タグとメタデータに基づいてカスタマイズ可能なカンバンボードでワークフローを視覚化</p>
+                    </div>
+                </div>
+                <div class="screenshot-item animate-on-scroll">
+                    <div class="screenshot-image">
+                        <img src="images/screenshots/table.svg" alt="Table View Screenshot">
+                    </div>
+                    <div class="screenshot-content">
+                        <h3 data-i18n="screenshots.table.title">強力なテーブルビュー</h3>
+                        <p data-i18n="screenshots.table.description">より良い概要のために、構造化されたテーブル形式でノートを整理およびフィルタリング</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <section id="platforms" class="platforms">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="platforms.title">対応プラットフォーム</h2>
+                <p data-i18n="platforms.subtitle">お好みのデバイスでBlock.mdを使用</p>
+            </div>
+            <div class="platform-grid">
+                <div class="platform-item animate-on-scroll">
+                    <img src="images/icons/platform-icons/apple.svg" alt="macOS" class="platform-icon">
+                    <h3 data-i18n="platforms.mac.title">macOS</h3>
+                    <p class="platform-status" data-i18n="platforms.mac.status_available">利用可能</p>
+                    <a href="#" class="app-store-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-store-icon">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <span data-i18n="platforms.mac.button">App Storeでダウンロード</span>
+                    </a>
+                </div>
+                <div class="platform-item animate-on-scroll coming-soon">
+                    <img src="images/icons/platform-icons/windows.svg" alt="Windows" class="platform-icon">
+                    <h3 data-i18n="platforms.windows.title">Windows</h3>
+                    <p class="platform-status" data-i18n="platforms.windows.status_coming_soon">近日公開</p>
+                    <span class="coming-soon-badge">Coming Soon</span>
+                </div>
+                <div class="platform-item animate-on-scroll coming-soon">
+                    <img src="images/icons/platform-icons/ios.svg" alt="iOS" class="platform-icon">
+                    <h3 data-i18n="platforms.ios.title">iOS</h3>
+                    <p class="platform-status" data-i18n="platforms.ios.status_coming_soon">近日公開</p>
+                    <span class="coming-soon-badge">Coming Soon</span>
+                </div>
+                <div class="platform-item animate-on-scroll coming-soon">
+                    <img src="images/icons/platform-icons/android.svg" alt="Android" class="platform-icon">
+                    <h3 data-i18n="platforms.android.title">Android</h3>
+                    <p class="platform-status" data-i18n="platforms.android.status_coming_soon">近日公開</p>
+                    <span class="coming-soon-badge">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.svg" alt="Block.md Logo" class="footer-logo-img">
-                    <p>© 2025 Block.md Team</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-links-group">
-                        <h4>製品</h4>
-                        <ul>
-                            <li><a href="#features">機能</a></li>
-                            <li><a href="#download">ダウンロード</a></li>
-                            <li><a href="#roadmap">ロードマップ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-group">
-                        <h4>サポート</h4>
-                        <ul>
-                            <li><a href="#docs">ドキュメント</a></li>
-                            <li><a href="#faq">よくある質問</a></li>
-                            <li><a href="#contact">お問い合わせ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-links-group">
-                        <h4>法的情報</h4>
-                        <ul>
-                            <li><a href="#privacy">プライバシーポリシー</a></li>
-                            <li><a href="#terms">利用規約</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <p data-i18n="footer.copyright">© 2025 Block.md. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    
-    <!-- Syntax self-check -->
-    <script>
-        try {
-            console.log("Syntax check passed");
-        } catch (error) {
-            console.error("Syntax error:", error.message);
-        }
-    </script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
