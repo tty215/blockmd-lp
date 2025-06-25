@@ -41,8 +41,8 @@ export const translations = {
   // ヒーローセクション
   "hero": {
     "title": {
-      "en": "Write like Notion.<br>Save as Markdown.",
-      "ja": "Write like Notion.<br>Save as Markdown."
+      "en": "Write like Notion.<br>Save as Markdown.<br>Ready for AI.",
+      "ja": "Write like Notion.<br>Save as Markdown.<br>Ready for AI."
     },
     "subtitle": {
       "en": "A new editor experience that combines block editing and local Markdown for engineers and knowledge workers",

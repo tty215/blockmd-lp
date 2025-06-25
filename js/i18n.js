@@ -135,7 +135,8 @@ export class LanguageManager {
       const key = element.getAttribute('data-i18n');
       const translatedText = this.translate(key);
       if (translatedText) {
-        element.textContent = translatedText;
+        // HTMLタグが含まれている可能性があるため、innerHTMLを使用
+        element.innerHTML = translatedText;
       }
     });
 
