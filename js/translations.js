@@ -11,6 +11,18 @@ export const translations = {
     "description": {
       "en": "A local-first, AI-friendly block-based markdown editor",
       "ja": "ローカル管理でAIフレンドリーなブロックベースのマークダウンエディタ"
+    },
+    "ogp_title": {
+      "en": "Block.md - Block Style Markdown Editor",
+      "ja": "Block.md - ブロック操作のマークダウンエディタ"
+    },
+    "ogp_description": {
+      "en": "A new editor experience that combines block editing and local Markdown for engineers and knowledge workers. Integrate with AI editors like Cursor, Claude Code, Windsurf, and Cline while ensuring privacy and security with optimal PKM directory structure.",
+      "ja": "エンジニアと知的作業者のための、ブロック編集とローカルMarkdownを融合した新しいエディタ体験。Cursor、Claude Code、Windsurf、Clineなどの各種AIエディタと連携し、PKMに最適なディレクトリ構成でプライバシーとセキュリティを確保。"
+    },
+    "keywords": {
+      "en": "Markdown,Editor,Notion,Block,AI,PKM,Knowledge Management,Local,Privacy,Security,Cursor,Claude",
+      "ja": "マークダウン,Markdown,エディタ,Notion,ブロック,AI,PKM,知識管理,ローカル,プライバシー,セキュリティ,Cursor,Claude"
     }
   },
   

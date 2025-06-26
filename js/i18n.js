@@ -135,8 +135,13 @@ export class LanguageManager {
       const key = element.getAttribute('data-i18n');
       const translatedText = this.translate(key);
       if (translatedText) {
-        // HTMLタグが含まれている可能性があるため、innerHTMLを使用
-        element.innerHTML = translatedText;
+        // メタタグの場合はcontent属性を更新
+        if (element.tagName === 'META') {
+          element.setAttribute('content', translatedText);
+        } else {
+          // HTMLタグが含まれている可能性があるため、innerHTMLを使用
+          element.innerHTML = translatedText;
+        }
       }
     });
 
@@ -154,6 +159,21 @@ export class LanguageManager {
     const pageTitle = this.translate('page.title');
     if (pageTitle) {
       document.title = pageTitle;
+    }
+
+    // OGPロケールの更新
+    this.updateOGPLocale();
+  }
+
+  /**
+   * OGPロケールを更新
+   */
+  updateOGPLocale() {
+    const ogLocaleElement = document.querySelector('[data-i18n-locale]');
+    if (ogLocaleElement) {
+      const locale = this.currentLang === 'en' ? 'en_US' : 'ja_JP';
+      ogLocaleElement.setAttribute('content', locale);
+      console.log(`OGP locale updated to: ${locale}`);
     }
   }
 
