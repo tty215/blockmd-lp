@@ -78,44 +78,54 @@ export const translations = {
         "ja": "純粋なマークダウンファイルを維持しながら、Notionのようなブロックベースのインターフェースでコンテンツを編集"
       }
     },
-    "local_first": {
+    "local_management": {
       "title": {
-        "en": "Local-first Management",
-        "ja": "ローカル管理優先"
+        "en": "Local Management",
+        "ja": "ローカル管理"
       },
       "description": {
-        "en": "Your data stays on your device. Work with local files and folders with complete control over your content",
-        "ja": "データはデバイスに保存。ローカルファイルとフォルダで作業し、コンテンツを完全に管理"
+        "en": "Your data is managed completely locally. Work with your files and folders, ensuring privacy and security",
+        "ja": "データは完全にローカルで管理。あなたのファイルとフォルダで作業し、プライバシーとセキュリティを確保"
       }
     },
-    "ai_friendly": {
+    "ai_rules": {
       "title": {
-        "en": "AI Editor Integration",
-        "ja": "AIエディタ連携"
+        "en": "AI Editor Acceleration Rule Set",
+        "ja": "AIエディタでのアウトプットを加速するルールセット"
       },
       "description": {
-        "en": "Apply rules for various AI editors like Cursor, Claude Code, Windsurf, and Cline",
-        "ja": "Cursor、Claude Code、Windsurf、Clineなどの各種AIエディタのルールを適用可能"
+        "en": "Integrate with various AI editors like Cursor, Claude Code, Windsurf, and Cline. Maximize productivity with dedicated rule sets",
+        "ja": "Cursor、Claude Code、Windsurf、Clineなどの各種AIエディタと連携。専用ルールセットで生産性を最大化"
       }
     },
-    "directory_structure": {
+    "pkm_directory": {
       "title": {
-        "en": "Flexible Directory Structure",
-        "ja": "柔軟なディレクトリ構造"
+        "en": "Optimal Directory Structure for PKM",
+        "ja": "PKMに最適なディレクトリ構成を適用できる"
       },
       "description": {
-        "en": "Choose the right directory structure for your knowledge management needs",
-        "ja": "知識管理に適したディレクトリ構造を選択可能"
+        "en": "Systematically organize and manage knowledge with a directory structure specialized for Personal Knowledge Management (PKM)",
+        "ja": "Personal Knowledge Management（PKM）に特化したディレクトリ構造で、知識を体系的に整理・管理"
       }
     },
-    "tag_based": {
+    "kanban_display": {
       "title": {
-        "en": "Tag-based Management",
-        "ja": "タグベース管理"
+        "en": "Tag-based Kanban Display Support",
+        "ja": "タグベースでカンバン表示に対応"
       },
       "description": {
-        "en": "Organize your data with tags and view as kanban boards or tables",
-        "ja": "タグでデータを管理し、カンバン表示やテーブル表示に対応"
+        "en": "Classify data with tags and intuitively manage task and project progress with visual kanban boards",
+        "ja": "タグでデータを分類し、視覚的なカンバンボードでタスクやプロジェクトの進捗を直感的に管理"
+      }
+    },
+    "table_display": {
+      "title": {
+        "en": "Tag-based Table Display Support",
+        "ja": "タグベースでテーブル表示にも対応"
+      },
+      "description": {
+        "en": "Organize information in structured table format. Efficiently search and analyze data with filtering and sorting",
+        "ja": "構造化されたテーブル形式で情報を整理。フィルタリングやソートでデータを効率的に検索・分析"
       }
     }
   },

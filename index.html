@@ -19,7 +19,6 @@
                 <nav>
                     <ul>
                         <li><a href="#features" data-i18n="nav.features">特徴</a></li>
-                        <li><a href="#screenshots" data-i18n="nav.screenshots">スクリーンショット</a></li>
                         <li><a href="#platforms" data-i18n="nav.platforms">プラットフォーム</a></li>
                     </ul>
                 </nav>
@@ -41,19 +40,16 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <img src="images/icon.webp" alt="Block.md Logo" class="hero-logo">
                     <h2 data-i18n="hero.title">Write like Notion. Save as Markdown. Ready for AI.</h2>
                     <p data-i18n="hero.subtitle">エンジニアと知的作業者のための、ブロック編集とローカルMarkdownを融合した新しいエディタ体験</p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                <path d="M2 17l10 5 10-5"></path>
-                                <path d="M2 12l10 5 10-5"></path>
-                            </svg>
-                            <span data-i18n="hero.cta_primary">macOS版をダウンロード</span>
+                        <a href="https://apps.apple.com/us/app/blockmd/id6747690759" class="download-image-link" target="_blank" rel="noopener noreferrer">
+                            <img src="images/download_mac.webp" alt="macOS版をダウンロード" class="download-button-image">
                         </a>
                     </div>
                 </div>
+
                 <div class="hero-image">
                     <img src="images/screenshots/top.webp" alt="Block.md Screenshot" class="hero-screenshot">
                 </div>
@@ -67,73 +63,76 @@
                 <h2 data-i18n="features.title">主な特徴</h2>
                 <p data-i18n="features.subtitle">現代の知識管理のために設計</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card animate-on-scroll">
-                    <img src="images/icons/block.svg" alt="Block-based Editor" class="feature-icon">
-                    <h3 data-i18n="features.block_based.title">ブロックベースのマークダウンエディタ</h3>
-                    <p data-i18n="features.block_based.description">純粋なマークダウンファイルを維持しながら、Notionのようなブロックベースのインターフェースでコンテンツを編集</p>
+            <div class="features-container">
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-content">
+                        <img src="images/icons/block.svg" alt="Block-based Editor" class="feature-icon">
+                        <h3 data-i18n="features.block_based.title">ブロックベースのマークダウンエディタ</h3>
+                        <p data-i18n="features.block_based.description">純粋なマークダウンファイルを維持しながら、Notionのようなブロックベースのインターフェースでコンテンツを編集</p>
+                    </div>
+                    <div class="feature-screenshot">
+                        <img src="images/screenshots/screenshot1.webp" alt="Block Editor Interface">
+                    </div>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <img src="images/icons/local.svg" alt="Local-first Management" class="feature-icon">
-                    <h3 data-i18n="features.local_first.title">ローカル管理優先</h3>
-                    <p data-i18n="features.local_first.description">データはデバイスに保存。ローカルファイルとフォルダで作業し、コンテンツを完全に管理</p>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-content">
+                        <img src="images/icons/local.svg" alt="Local Management" class="feature-icon">
+                        <h3 data-i18n="features.local_management.title">ローカル管理</h3>
+                        <p data-i18n="features.local_management.description">データは完全にローカルで管理。あなたのファイルとフォルダで作業し、プライバシーとセキュリティを確保</p>
+                    </div>
+                    <div class="feature-screenshot">
+                        <img src="images/screenshots/screenshot2.webp" alt="Local Management Interface">
+                    </div>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <img src="images/icons/ai.svg" alt="AI Editor Integration" class="feature-icon">
-                    <h3 data-i18n="features.ai_friendly.title">AIエディタ連携</h3>
-                    <p data-i18n="features.ai_friendly.description">Cursor、Claude Code、Windsurf、Clineなどの各種AIエディタのルールを適用可能</p>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-content">
+                        <img src="images/icons/ai.svg" alt="AI Editor Acceleration" class="feature-icon">
+                        <h3 data-i18n="features.ai_rules.title">AIエディタでのアウトプットを加速するルールセット</h3>
+                        <p data-i18n="features.ai_rules.description">Cursor、Claude Code、Windsurf、Clineなどの各種AIエディタと連携。専用ルールセットで生産性を最大化</p>
+                    </div>
+                    <div class="feature-screenshot">
+                        <img src="images/screenshots/screenshot3.webp" alt="AI Rules Integration">
+                    </div>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <img src="images/icons/directory.svg" alt="Flexible Directory Structure" class="feature-icon">
-                    <h3 data-i18n="features.directory_structure.title">柔軟なディレクトリ構造</h3>
-                    <p data-i18n="features.directory_structure.description">知識管理に適したディレクトリ構造を選択可能</p>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-content">
+                        <img src="images/icons/directory.svg" alt="PKM Directory Structure" class="feature-icon">
+                        <h3 data-i18n="features.pkm_directory.title">PKMに最適なディレクトリ構成を適用できる</h3>
+                        <p data-i18n="features.pkm_directory.description">Personal Knowledge Management（PKM）に特化したディレクトリ構造で、知識を体系的に整理・管理</p>
+                    </div>
+                    <div class="feature-screenshot">
+                        <img src="images/screenshots/screenshot4.webp" alt="PKM Directory Structure">
+                    </div>
                 </div>
-                <div class="feature-card animate-on-scroll">
-                    <img src="images/icons/tag.svg" alt="Tag-based Management" class="feature-icon">
-                    <h3 data-i18n="features.tag_based.title">タグベース管理</h3>
-                    <p data-i18n="features.tag_based.description">タグでデータを管理し、カンバン表示やテーブル表示に対応</p>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-content">
+                        <img src="images/icons/tag.svg" alt="Kanban Display" class="feature-icon">
+                        <h3 data-i18n="features.kanban_display.title">タグベースでカンバン表示に対応</h3>
+                        <p data-i18n="features.kanban_display.description">タグでデータを分類し、視覚的なカンバンボードでタスクやプロジェクトの進捗を直感的に管理</p>
+                    </div>
+                    <div class="feature-screenshot">
+                        <img src="images/screenshots/screenshot5.webp" alt="Kanban View Interface">
+                    </div>
+                </div>
+                
+                <div class="feature-item animate-on-scroll">
+                    <div class="feature-content">
+                        <img src="images/icons/tag.svg" alt="Table Display" class="feature-icon">
+                        <h3 data-i18n="features.table_display.title">タグベースでテーブル表示にも対応</h3>
+                        <p data-i18n="features.table_display.description">構造化されたテーブル形式で情報を整理。フィルタリングやソートでデータを効率的に検索・分析</p>
+                    </div>
+                    <div class="feature-screenshot">
+                        <img src="images/screenshots/screenshot6.webp" alt="Table View Interface">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <div class="section-title">
-                <h2 data-i18n="screenshots.title">Block.mdの実際の画面</h2>
-                <p data-i18n="screenshots.subtitle">シンプルなインターフェースで強力な機能を提供</p>
-            </div>
-            <div class="screenshots-container">
-                <div class="screenshot-item animate-on-scroll">
-                    <div class="screenshot-image">
-                        <img src="images/screenshots/editor.svg" alt="Block Editor Screenshot">
-                    </div>
-                    <div class="screenshot-content">
-                        <h3 data-i18n="screenshots.editor.title">直感的なブロックエディタ</h3>
-                        <p data-i18n="screenshots.editor.description">Notionを使ったことがある方には馴染みやすい、モダンなブロックベースのエディタで思考を整理</p>
-                    </div>
-                </div>
-                <div class="screenshot-item animate-on-scroll">
-                    <div class="screenshot-image">
-                        <img src="images/screenshots/kanban.svg" alt="Kanban View Screenshot">
-                    </div>
-                    <div class="screenshot-content">
-                        <h3 data-i18n="screenshots.kanban.title">タスク管理のカンバンビュー</h3>
-                        <p data-i18n="screenshots.kanban.description">タグとメタデータに基づいてカスタマイズ可能なカンバンボードでワークフローを視覚化</p>
-                    </div>
-                </div>
-                <div class="screenshot-item animate-on-scroll">
-                    <div class="screenshot-image">
-                        <img src="images/screenshots/table.svg" alt="Table View Screenshot">
-                    </div>
-                    <div class="screenshot-content">
-                        <h3 data-i18n="screenshots.table.title">強力なテーブルビュー</h3>
-                        <p data-i18n="screenshots.table.description">より良い概要のために、構造化されたテーブル形式でノートを整理およびフィルタリング</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="platforms" class="platforms">
         <div class="container">
@@ -145,30 +144,23 @@
                 <div class="platform-item animate-on-scroll">
                     <img src="images/icons/platform-icons/apple.svg" alt="macOS" class="platform-icon">
                     <h3 data-i18n="platforms.mac.title">macOS</h3>
-                    <p class="platform-status" data-i18n="platforms.mac.status_available">利用可能</p>
-                    <a href="#" class="app-store-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="app-store-icon">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                        <span data-i18n="platforms.mac.button">App Storeでダウンロード</span>
+                    <a href="https://apps.apple.com/us/app/blockmd/id6747690759" class="download-image-link" target="_blank" rel="noopener noreferrer">
+                        <img src="images/download_mac.webp" alt="App Storeでダウンロード" class="download-button-image">
                     </a>
                 </div>
                 <div class="platform-item animate-on-scroll coming-soon">
                     <img src="images/icons/platform-icons/windows.svg" alt="Windows" class="platform-icon">
                     <h3 data-i18n="platforms.windows.title">Windows</h3>
-                    <p class="platform-status" data-i18n="platforms.windows.status_coming_soon">近日公開</p>
                     <span class="coming-soon-badge">Coming Soon</span>
                 </div>
                 <div class="platform-item animate-on-scroll coming-soon">
                     <img src="images/icons/platform-icons/ios.svg" alt="iOS" class="platform-icon">
                     <h3 data-i18n="platforms.ios.title">iOS</h3>
-                    <p class="platform-status" data-i18n="platforms.ios.status_coming_soon">近日公開</p>
                     <span class="coming-soon-badge">Coming Soon</span>
                 </div>
                 <div class="platform-item animate-on-scroll coming-soon">
                     <img src="images/icons/platform-icons/android.svg" alt="Android" class="platform-icon">
                     <h3 data-i18n="platforms.android.title">Android</h3>
-                    <p class="platform-status" data-i18n="platforms.android.status_coming_soon">近日公開</p>
                     <span class="coming-soon-badge">Coming Soon</span>
                 </div>
             </div>
